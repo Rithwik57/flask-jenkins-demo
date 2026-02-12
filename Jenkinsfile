@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_USER = 'your_dockerhub_username'
+        DOCKER_USER = 'rithwik57'
         IMAGE_NAME  = 'flask-web-app'
         IMAGE_TAG   = "${env.BUILD_ID}"
         REGISTRY    = "docker.io/${DOCKER_USER}/${IMAGE_NAME}"
@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/youruser/your-repo.git'
+                    url: 'https://github.com/Rithwik57/flask-jenkins-demo.git'
             }
         }
 
