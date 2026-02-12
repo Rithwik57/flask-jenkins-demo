@@ -1,3 +1,3 @@
 # This is readme
-hello.
+hello. \n
 test for CI/CD
